@@ -1,3 +1,3 @@
-# Sohyun Lee's Homepage
+# Dayoung Gong's Homepage
 
-This repository contains the source code for [my homepage](https://sohyun-l.github.io)
+This repository contains the source code for [my homepage](https://dygong.github.io)
