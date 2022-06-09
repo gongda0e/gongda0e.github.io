@@ -6,25 +6,27 @@ subtitle: Integrated M.S. & Ph.D. student in the <a href='http://cvlab.postech.a
 
 profile:
   align: right
-  image: SohyunLee.png
-  address: >
-    <p>Room#302, B2,</p>
-    <p>Chungam-Ro 77, POSTECH,</p>
-    <p>Pohang, Gyeongbuk,</p>
-    <p>South Korea 37673</p>
+  image: dygong.png
+  # address: >
+    # <p>Room#302, B2,</p>
+    # <p>Chungam-Ro 77, POSTECH,</p>
+    # <p>Pohang, Gyeongbuk,</p>
+    # <p>South Korea 37673</p>
 
 news: true  # includes a list of news items
 education: true # includes a list of education items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-services: true
+services: false
 honors: true
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a graduate student in the Graduate School of Artificial Intelligence integrated M.S. & Ph.D. program at [POSTECH](https://www.postech.ac.kr). I am a member of the [Computer Vision Lab](http://cvlab.postech.ac.kr/lab/) at POSTECH, advised by Prof. [Suha Kwak](https://suhakwak.github.io). 
-Previously, I completed my B.S. in Mechanical Engineering at POSTECH.\
+I am a graduate student in the Graduate School of Artificial Intelligence integrated M.S. & Ph.D. program at [POSTECH](https://www.postech.ac.kr). I am a member of the [Computer Vision Lab](http://cvlab.postech.ac.kr/lab/) at POSTECH, advised by Prof. [Minsu Cho](http://cvlab.postech.ac.kr/~mcho/). 
+Previously, I completed my B.S. in Convergence IT Engineering at POSTECH.\
 \
-My research interests lie in computer vision and deep learning. I've worked on the robust recognition in adverse visual conditions, domain adaptation, and generalization. 
+My research interests lie in computer vision and deep learning. 
+Especially, I'm interested in understanding temporal and semantic relations of actions.
+I've worked on long-term action anticipation.
 If you are interested in my research projects, please feel free to contact me by clicking one of the icons below.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
