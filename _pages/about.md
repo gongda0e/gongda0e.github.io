@@ -24,8 +24,7 @@ social: true  # includes social icons at the bottom of the page
 I am a graduate student in the Graduate School of Artificial Intelligence integrated M.S. & Ph.D. program at [POSTECH](https://www.postech.ac.kr). I am a member of the [Computer Vision Lab](http://cvlab.postech.ac.kr/lab/) at POSTECH, advised by Prof. [Minsu Cho](http://cvlab.postech.ac.kr/~mcho/). 
 Previously, I completed my B.S. in Convergence IT Engineering at POSTECH.\
 \
-My research interests lie in computer vision and deep learning. 
-Especially, I'm interested in understanding temporal and semantic relations of actions.
+My research interests lie in computer vision and deep learning, especially in understanding temporal and semantic relations between actions in long-term videos.
 I've worked on long-term action anticipation.
 If you are interested in my research projects, please feel free to contact me by clicking one of the icons below.
 
