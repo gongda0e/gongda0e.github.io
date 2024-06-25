@@ -2,6 +2,8 @@
 layout: post
 inline: true
 ---
+**Technical Chair**
+- Asian Conference on Computer Vision (**ACCV**), 2024
 
 **Conference Reviewer**
 - Conference on Neural Information Processing Systems (**NeurIPS**), 2024
