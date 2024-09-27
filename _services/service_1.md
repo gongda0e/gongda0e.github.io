@@ -5,6 +5,9 @@ inline: true
 **Technical Chair**
 - Asian Conference on Computer Vision (**ACCV**), 2024
 
+**Workshop Organizer**
+- Women in Computer Vision in Asian Conference on Computer Vision (**ACCV**), 2024
+
 **Conference Reviewer**
 - Conference on Neural Information Processing Systems (**NeurIPS**), 2024
 - European Conference on Computer Vision (**ECCV**), 2024
