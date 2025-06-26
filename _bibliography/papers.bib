@@ -1,8 +1,20 @@
 ---
 ---
 
+@string{iccv = {{IEEE/CVF} International Conference on Computer Vision (<b>ICCV</b>),}}
 @string{cvpr = {{IEEE/CVF} Conference on Computer Vision and Pattern Recogntiion (<b>CVPR</b>),}}
 @string{neurips = {Conference on Neural Information Processing Systems (<b>NeurIPS</b>),}}
+
+@inproceedings{lee2025llmvs,
+  author  = {Jaejun Hwang* and Dayoung Gong* and Manjin Kim and Minsu Cho},
+  title = {Generic Event Boundary Detection via Denoising Diffusion},
+  abstract  = {Generic event boundary detection (GEBD) aims to identify natural boundaries in a video, segmenting it into distinct and meaningful chunks. Despite the inherent subjectivity of event boundaries, previous methods have focused on deterministic predictions, overlooking the diversity of plausible solutions. In this paper, we introduce a novel diffusion-based boundary detection model, dubbed DiffGEBD, that tackles the problem of GEBD from a generative perspective. The proposed model encodes relevant changes across adjacent frames via temporal self-similarity and then iteratively decodes random noise into plausible event boundaries being conditioned on the encoded features. Classifier-free guidance allows the degree of diversity to be controlled in denoising diffusion. In addition, we introduce a new evaluation metric to assess the quality of predictions considering both diversity and fidelity. Experiments show that our method achieves strong performance on two standard benchmarks, TAPOS and Kinetics-GEBD, generating diverse and plausible event boundaries.},
+  booktitle = iccv,
+  year      = {2025},
+  abbr={ICCV},
+selected={true},
+img_path={assets/img/DiffGEBD.png},
+  }
 
 @inproceedings{lee2025llmvs,
   author  = {Min Jung Lee and Dayoung Gong and Minsu Cho},
