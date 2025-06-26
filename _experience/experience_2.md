@@ -5,6 +5,5 @@ inline: true
 ---
 
 [IMAGINE](http://imagine.enpc.fr), [École des Ponts ParisTech](https://ecoledesponts.fr) (ENPC), France\
-*Visiting Ph.D Student*
-- Host: [Gül Varol](https://gulvarol.github.io)
+*Visiting Ph.D Student*, Host: [Gül Varol](https://gulvarol.github.io)
 
