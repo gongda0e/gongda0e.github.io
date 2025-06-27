@@ -14,8 +14,8 @@ profile:
     # <p>South Korea 37673</p>
 
 news: true  # includes a list of news items
-experience: true # includes a list of experience items
 education: true # includes a list of education items
+experience: true # includes a list of experience items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 services: true
 honors: true
