@@ -5,7 +5,7 @@ institution: "POSTECH"
 location: "Pohang, South Korea"
 date: 2020-03-01
 end_date: present
-start_end: "March, 2020 – Present"
+start_end: "March 2020 – Present"
 inline: true
 ---
 
