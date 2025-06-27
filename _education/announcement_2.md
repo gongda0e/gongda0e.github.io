@@ -6,4 +6,3 @@ inline: true
 
 [Pohang University of Science and Technology (POSTECH)](https://www.postech.ac.kr), Pohang, South Korea \
 M.S. & Ph.D. Student in Graduate School of Artificial Intelligence \
-Advisor: Prof. [Minsu Cho](http://cvlab.postech.ac.kr/~mcho/).
