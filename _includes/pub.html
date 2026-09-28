@@ -5,7 +5,9 @@
 {%- for l in p.links %}{% if l.name == 'Website' %}{% assign main_link = l %}{% endif %}{% endfor -%}
 <article class="pub" data-first="{{ p.first_author | default: false }}">
   <div>
-    {%- if p.image_dark %}
+    {%- if p.video %}
+    <div class="thumb"><video src="{{ p.video | relative_url }}" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video></div>
+    {%- elsif p.image_dark %}
     <div class="thumb only-light"><img src="{{ p.image | relative_url }}" alt="" loading="lazy"></div>
     <div class="thumb dark-fig only-dark"><img src="{{ p.image_dark | relative_url }}" alt="" loading="lazy"></div>
     {%- elsif p.image %}
