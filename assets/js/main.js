@@ -21,3 +21,14 @@ document.querySelectorAll('.filter').forEach((group) => {
     });
   }));
 });
+
+// Light/dark toggle. The initial theme is set by an inline script in the head.
+document.querySelectorAll('[data-theme-toggle]').forEach((b) => b.addEventListener('click', () => {
+  const root = document.documentElement;
+  const dark = root.dataset.theme
+    ? root.dataset.theme === 'dark'
+    : matchMedia('(prefers-color-scheme: dark)').matches;
+  const next = dark ? 'light' : 'dark';
+  root.dataset.theme = next;
+  try { localStorage.setItem('theme', next); } catch (e) {}
+}));
