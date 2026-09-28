@@ -32,3 +32,10 @@ document.querySelectorAll('[data-theme-toggle]').forEach((b) => b.addEventListen
   root.dataset.theme = next;
   try { localStorage.setItem('theme', next); } catch (e) {}
 }));
+
+// Some browsers ignore the autoplay attribute; nudge muted teaser videos to start.
+document.querySelectorAll('.thumb video').forEach((v) => {
+  v.muted = true;
+  const p = v.play();
+  if (p) p.catch(() => {});
+});

@@ -2,7 +2,7 @@
 #   title, authors (one string; your name is bolded automatically; use * for equal contribution)
 #   venue (short, e.g. NeurIPS), venue_full, year
 #   image        -> teaser in /assets/img/  (image_dark: optional dark-mode version)
-#   video        -> looping teaser video, e.g. /assets/video/x.mp4 (used instead of image)
+#   video        -> looping teaser video, e.g. /assets/video/x.mp4 (image, if set, is shown until it plays)
 #   first_author -> true shows it under the "First author" filter
 #   selected     -> true shows it on the home page (all papers always appear on /publications/)
 #   awards, note -> optional lines under the venue
@@ -15,6 +15,7 @@
   venue_full: Advances in Neural Information Processing Systems
   year: 2026
   video: /assets/video/lthoi.mp4
+  image: /assets/video/lthoi_poster.jpg
   first_author: true
   selected: true
   abstract: >-
