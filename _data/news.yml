@@ -2,7 +2,7 @@
 # `text` accepts Markdown, e.g. [link text](https://...).
 
 - date: 2026-09-24
-  text: "Our paper on long-term human-object interaction is accepted to [NeurIPS 2026](https://neurips.cc/Conferences/2026)."
+  text: "**LT-HOI** is accepted to [NeurIPS 2026](https://neurips.cc/Conferences/2026)."
 - date: 2026-06-22
   text: "I started as a research scientist intern at Meta Zurich."
 - date: 2026-06-02
