@@ -1,0 +1,109 @@
+/* Styles for gongda0e.github.io. Colors are defined once at the top. */
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#ffffff;--ink:#1a1f36;--muted:#5e6478;--line:#e6e8ef;--soft:#f5f6fa;--acc:#9e1b32;--fig:#ffffff;
+  --sans:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#171923;--ink:#e9eaf0;--muted:#a3a7b8;--line:#2c2f3d;--soft:#1f2230;--acc:#e8889a;--fig:#f4f4f6}
+}
+:root[data-theme="dark"]{--bg:#171923;--ink:#e9eaf0;--muted:#a3a7b8;--line:#2c2f3d;--soft:#1f2230;--acc:#e8889a;--fig:#f4f4f6}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 24px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.7 var(--serif);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--acc);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:3px}
+
+/* light/dark figure swap (ActFusion ships both) */
+.only-dark{display:none!important}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .only-dark{display:block!important}:root:not([data-theme="light"]) .only-light{display:none!important}}
+:root[data-theme="dark"] .only-dark{display:block!important}
+:root[data-theme="dark"] .only-light{display:none!important}
+
+.grid{max-width:1140px;margin:0 auto;padding:0 28px;display:grid;grid-template-columns:260px 1fr;gap:64px}
+aside{position:sticky;top:env(safe-area-inset-top,0px);align-self:start;padding:56px 0 24px}
+.photo{width:200px;aspect-ratio:4/5;border-radius:10px;overflow:hidden;background:var(--soft);margin-bottom:22px}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:58% 30%}
+.nm{font-size:30px;line-height:1.15;font-weight:600;margin:0 0 4px;letter-spacing:-.01em}
+.kr{font-size:17px;color:var(--muted);margin:0 0 14px}
+.role{font-size:16px;line-height:1.5;margin:0 0 20px;color:var(--muted)}
+.role span{display:block}
+.side-links{list-style:none;margin:0 0 22px;padding:0;font:500 15px/1.9 var(--sans)}
+.side-nav{list-style:none;margin:0;padding:18px 0 0;border-top:1px solid var(--line);font:500 15px/2 var(--sans)}
+.side-nav a{color:var(--muted)}
+.side-nav a:hover{color:var(--ink);text-decoration:none}
+
+main{padding:56px 0 64px;min-width:0}
+section{margin-bottom:56px}
+h2{font:600 15px/1.2 var(--sans);color:var(--acc);margin:0 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.about p{margin:0 0 14px;max-width:38em}
+.news{list-style:none;padding:0;margin:0}
+.news li{display:grid;grid-template-columns:96px 1fr;gap:14px;margin-bottom:8px;font-size:17px}
+.news time{font:500 14px/1.9 var(--sans);color:var(--muted)}
+
+.filter{display:flex;gap:6px;margin:-4px 0 20px;font:500 14px/1 var(--sans)}
+.filter button{font:inherit;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:4px;padding:6px 10px;cursor:pointer}
+.filter button[aria-pressed="true"]{color:var(--ink);border-color:var(--ink)}
+.filter .note{align-self:center;margin-left:8px;color:var(--muted);font-weight:400}
+.pub{display:grid;grid-template-columns:240px 1fr;gap:26px;padding:20px 0;border-bottom:1px solid var(--line)}
+.thumb{aspect-ratio:16/10;border-radius:6px;overflow:hidden;border:1px solid var(--line);background:var(--fig);display:grid;place-items:center;padding:6px}
+.thumb img{width:100%;height:100%;object-fit:contain}
+.thumb.dark-fig{background:#2b2b2b}
+.pub h3{font-size:19px;line-height:1.35;margin:0 0 6px;font-weight:600}
+.pub h3 a{color:var(--ink)}
+.pub .au{margin:0 0 2px;font-size:16px;color:var(--muted)}
+.pub .au strong{color:var(--ink);font-weight:600}
+.pub .ve{margin:0 0 6px;font-size:16px;font-style:italic}
+.pub .aw{font:600 13px/1.4 var(--sans);color:var(--acc);margin:0 0 8px}
+.pub .pl{display:flex;gap:6px;flex-wrap:wrap;font:500 13.5px/1 var(--sans)}
+.pub .pl a,.pub .pl button{border:1px solid var(--line);border-radius:4px;padding:6px 9px}
+.pub .pl a:hover{border-color:var(--acc);text-decoration:none}
+.pub .pl button{font:inherit;color:var(--muted);background:none;cursor:pointer}
+.pub .pl button[aria-expanded="true"]{color:var(--ink);border-color:var(--ink)}
+.pub .abs{margin:12px 0 0;font-size:16px;line-height:1.65;color:var(--muted);max-width:40em}
+.eq{font:400 13px/1.4 var(--sans);color:var(--muted);margin:14px 0 0}
+
+.rows{list-style:none;margin:0;padding:0}
+.rows li{display:grid;grid-template-columns:170px 1fr;gap:18px;margin-bottom:16px}
+.rows .when{font:500 14px/1.9 var(--sans);color:var(--muted)}
+.rows .what b{font-weight:600}
+.rows .what span{display:block;font-size:16px;color:var(--muted)}
+.sub{font:600 14px/1.2 var(--sans);color:var(--ink);margin:28px 0 12px}
+.sub:first-of-type{margin-top:0}
+footer{font:400 14px/1.5 var(--sans);color:var(--muted);padding-top:20px;border-top:1px solid var(--line)}
+
+@media (max-width:860px){
+  .grid{grid-template-columns:1fr;gap:0}
+  aside{position:static;padding:40px 0 0;display:grid;grid-template-columns:120px 1fr;column-gap:20px;align-items:start}
+  .photo{width:120px;grid-row:span 4;margin:0}
+  .side-links{display:flex;flex-wrap:wrap;gap:4px 14px;grid-column:1/-1;margin:16px 0 0}
+  .side-nav{display:none}
+  main{padding-top:40px}
+  .pub{grid-template-columns:1fr;gap:12px}
+  .thumb{max-width:380px}
+  .rows li,.news li{grid-template-columns:1fr;gap:0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* additions for the Jekyll version */
+.photo{display:block}
+.side-nav a[aria-current="page"]{color:var(--ink)}
+.filter .note{font:500 14px/1 var(--sans);color:var(--acc)}
+.pub[hidden],.year-group[hidden]{display:none}
+.rows .what .line{display:block;font-size:16px;color:var(--ink)}
+.rows .what .line strong{font-weight:600}
+details.more{margin-top:6px}
+details.more summary{cursor:pointer;font:500 14px/1.9 var(--sans);color:var(--acc);list-style-position:inside}
+details.more .news{margin-top:8px}
+.year{font:600 22px/1.2 var(--serif);margin:28px 0 8px}
+.year-group:first-of-type .year{margin-top:4px}
+.publist .pub:first-child{padding-top:0}
+.publist .pub:last-child{border-bottom:0}
+
+.rows .what b a{color:var(--ink)}
+.rows .what b a:hover{color:var(--acc)}

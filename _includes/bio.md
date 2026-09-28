@@ -1,0 +1,5 @@
+I am a graduate student in the integrated M.S. & Ph.D. program at the Graduate School of Artificial Intelligence, [POSTECH](https://www.postech.ac.kr), working with [Minsu Cho](http://cvlab.postech.ac.kr/~mcho/) in the [Computer Vision Lab](http://cvlab.postech.ac.kr/lab/). I am currently a research scientist intern at [Meta](https://www.meta.com/) in Zurich. Previously, I was a visiting researcher in the [IMAGINE](http://imagine.enpc.fr) group at [École des Ponts ParisTech](https://ecoledesponts.fr) (ENPC) with [Gül Varol](https://gulvarol.github.io), and I received my B.S. in Convergence IT Engineering from POSTECH.
+
+My research interests lie in computer vision and deep learning, especially in understanding the temporal and semantic relations between actions in long-term videos. I have worked on long-term action anticipation, temporal action segmentation, and event boundary detection.
+
+If you are interested in my research, feel free to reach out by [email](mailto:gongda0e@postech.ac.kr).

@@ -1,0 +1,22 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+{%- assign by_year = site.data.publications | group_by: 'year' | sort: 'name' | reverse -%}
+<section id="pubs">
+  <h2>Publications</h2>
+  <div class="filter" role="group" aria-label="Filter publications">
+    <button type="button" aria-pressed="true" data-f="all">All</button>
+    <button type="button" aria-pressed="false" data-f="first">First author</button>
+  </div>
+  {%- for g in by_year %}
+  <div class="year-group">
+    <p class="year">{{ g.name }}</p>
+    <div class="publist">
+      {%- for p in g.items %}{% include pub.html p=p %}{% endfor %}
+    </div>
+  </div>
+  {%- endfor %}
+  <p class="eq">* Equal contribution</p>
+</section>

@@ -1,0 +1,35 @@
+# Add new items anywhere; the site sorts them by date (newest first).
+# `text` accepts Markdown, e.g. [link text](https://...).
+
+- date: 2026-09-24
+  text: "📝 Our paper 'Long-Term Composition of Human-Object Interaction' is accepted to [NeurIPS 2026](https://neurips.cc/Conferences/2026)."
+- date: 2026-06-22
+  text: "I started as a research scientist intern at Meta Zurich."
+- date: 2026-06-02
+  text: "I am very honored to be selected as one of the [Outstanding Reviewers for CVPR 2026](https://media.eventhosts.cc/Conferences/CVPR2026/CVPR_main_conf_2026_15.pdf)."
+- date: 2026-02-09
+  text: "🏆 Awarded the POSTECHIAN Fellowship."
+- date: 2026-02-06
+  text: "🏆 Awarded the Best Poster Presentation Award at [IPIU 2026](http://www.ipiu.or.kr/)."
+- date: 2025-06-25
+  text: "📝 Our paper 'Generic Event Boundary Detection via Denoising Diffusion' is accepted to [ICCV 2025](https://iccv.thecvf.com/)."
+- date: 2025-02-27
+  text: "📝 Our paper 'Video Summarization with Large Language Models' is accepted to [CVPR 2025](https://cvpr.thecvf.com)."
+- date: 2024-09-27
+  text: "📝 Our paper 'ActFusion: a Unified Diffusion Model for Action Segmentation and Anticipation' is accepted to [NeurIPS 2024](https://nips.cc/). See you in Vancouver 🇨🇦!"
+- date: 2024-08-02
+  text: "I serve as an organizer for the [Women in Computer Vision](https://sites.google.com/view/wicvaccv2024/) workshop at ACCV 2024, Hanoi, Vietnam."
+- date: 2024-06-18
+  text: "[Our paper](https://arxiv.org/abs/2312.04266) has been accepted to the [LPVL workshop](https://sites.google.com/view/lpvl-cvpr2024) at [CVPR 2024](https://cvpr.thecvf.com/virtual/2024/index.html)."
+- date: 2024-06-06
+  text: "I serve as a Technical Chair in [ACCV 2024](https://accv2024.org), Hanoi, Vietnam."
+- date: 2024-02-27
+  text: "🏆 [Our paper](https://arxiv.org/abs/2312.04266) won the Excellence Award at BK21 Best Paper Award from [POSTECH GSAI](https://ai.postech.ac.kr)."
+- date: 2023-09-21
+  text: "📝 A paper about neuro-symbolic methods for temporal action segmentation is accepted to [NeurIPS 2023](https://nips.cc/)."
+- date: 2023-02-27
+  text: "🏆 FUTR won the Excellence Award at BK21 Best Paper Award from [POSTECH GSAI](https://ai.postech.ac.kr)."
+- date: 2022-03-03
+  text: "📝 A paper about long-term action anticipation is accepted to [CVPR 2022](https://cvpr2022.thecvf.com)."
+- date: 2020-12-01
+  text: "🏆 I won the POSTECH Creative Self-Research Scholarship."

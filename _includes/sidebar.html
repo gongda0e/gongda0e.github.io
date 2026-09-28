@@ -1,0 +1,19 @@
+{%- assign profile = site.data.profile -%}
+<aside>
+  <a class="photo" href="{{ '/' | relative_url }}"><img src="{{ profile.photo | relative_url }}" alt="{{ profile.name }}"></a>
+  <p class="nm">{{ profile.name }}</p>
+  {% if profile.name_native %}<p class="kr">{{ profile.name_native }}</p>{% endif %}
+  <p class="role">{% for r in profile.roles %}<span>{{ r }}</span>{% endfor %}</p>
+  <ul class="side-links">
+    {% for l in profile.links %}<li><a href="{{ l.url }}">{{ l.name }}</a></li>{% endfor %}
+  </ul>
+  {%- assign home = '/' | relative_url -%}
+  <ul class="side-nav">
+    <li><a href="{{ home }}#about">About</a></li>
+    <li><a href="{{ home }}#news">News</a></li>
+    <li><a href="{{ home }}#pubs">Selected publications</a></li>
+    <li><a href="{{ '/publications/' | relative_url }}"{% if page.url == '/publications/' %} aria-current="page"{% endif %}>All publications</a></li>
+    <li><a href="{{ home }}#exp">Experience &amp; education</a></li>
+    <li><a href="{{ home }}#svc">Service &amp; honors</a></li>
+  </ul>
+</aside>

@@ -1,0 +1,13 @@
+# Newest first. `org` and `detail` accept Markdown links.
+- when: Jun 2026 – Dec 2026
+  org: "[Meta](https://www.meta.com/), Zurich"
+  role: Research Scientist Intern
+  detail: "Manager: [Gaël Le Lan](https://scholar.google.com/citations?hl=fr&user=QrIyt6sAAAAJ&view_op=list_works&sortby=pubdate)"
+- when: May 2025 – Nov 2025
+  org: "[IMAGINE](http://imagine.enpc.fr), [École des Ponts ParisTech](https://ecoledesponts.fr) (ENPC), France"
+  role: Visiting Ph.D. Student
+  detail: "Host: [Gül Varol](https://gulvarol.github.io)"
+- when: Mar 2020 – present
+  org: "[Computer Vision Lab](http://cvlab.postech.ac.kr/lab/), [POSTECH](https://postech.ac.kr/), Pohang, South Korea"
+  role: M.S./Ph.D. Student
+  detail: "Advisor: [Minsu Cho](https://cvlab.postech.ac.kr/~mcho/)"

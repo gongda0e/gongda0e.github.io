@@ -1,0 +1,68 @@
+---
+layout: default
+---
+{%- assign news = site.data.news | sort: 'date' | reverse -%}
+{%- assign n = site.news_on_home | default: 6 -%}
+{%- assign selected = site.data.publications | where: 'selected', true -%}
+{%- assign first_count = site.data.publications | where: 'first_author', true | size -%}
+
+<section class="about" id="about">
+  <h2>About</h2>
+  {% capture bio %}{% include bio.md %}{% endcapture %}{{ bio | markdownify }}
+</section>
+
+<section id="news">
+  <h2>News</h2>
+  <ul class="news">
+    {%- for item in news limit: n %}
+    <li><time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%b %Y' }}</time><span>{{ item.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span></li>
+    {%- endfor %}
+  </ul>
+  {%- if news.size > n %}
+  <details class="more">
+    <summary>Older news</summary>
+    <ul class="news">
+      {%- for item in news offset: n %}
+      <li><time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%b %Y' }}</time><span>{{ item.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span></li>
+      {%- endfor %}
+    </ul>
+  </details>
+  {%- endif %}
+</section>
+
+<section id="pubs">
+  <h2>Selected publications</h2>
+  <div class="filter" role="group" aria-label="Filter publications">
+    <button type="button" aria-pressed="true" data-f="all">All</button>
+    <button type="button" aria-pressed="false" data-f="first">First author</button>
+    <a class="note" href="{{ '/publications/' | relative_url }}">Full list</a>
+  </div>
+  <div class="publist">
+    {%- for p in selected %}{% include pub.html p=p %}{% endfor %}
+  </div>
+  <p class="eq">* Equal contribution</p>
+</section>
+
+<section id="exp">
+  <h2>Experience &amp; education</h2>
+  <p class="sub">Experience</p>
+  {% include rows.html items=site.data.experience %}
+  <p class="sub">Education</p>
+  {% include rows.html items=site.data.education %}
+</section>
+
+<section id="svc">
+  <h2>Service &amp; honors</h2>
+  <p class="sub">Professional service</p>
+  <ul class="rows">
+    {%- for s in site.data.service %}
+    <li><span class="when">{{ s.role }}</span><span class="what">{% for i in s.items %}<span class="line">{{ i | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>{% endfor %}</span></li>
+    {%- endfor %}
+  </ul>
+  <p class="sub">Honors and awards</p>
+  <ul class="rows">
+    {%- for h in site.data.honors %}
+    <li><span class="when">{{ h.year }}</span><span class="what"><b>{{ h.title }}</b>{% if h.org %}, {{ h.org }}{% endif %}</span></li>
+    {%- endfor %}
+  </ul>
+</section>

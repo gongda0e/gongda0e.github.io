@@ -1,0 +1,6 @@
+{%- comment -%} Renders experience / education rows: when, org, role, detail {%- endcomment -%}
+<ul class="rows">
+{%- for e in include.items %}
+  <li><span class="when">{{ e.when }}</span><span class="what"><b>{{ e.org | markdownify | remove: '<p>' | remove: '</p>' | strip }}</b><span>{{ e.role }}{% if e.detail %}. {{ e.detail | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% endif %}</span></span></li>
+{%- endfor %}
+</ul>

@@ -1,0 +1,16 @@
+# Sidebar and page header.
+name: Dayoung Gong
+name_native: 공다영
+email: gongda0e@postech.ac.kr
+photo: /assets/img/dygong.png
+
+# Short lines under your name. Update these when your position changes.
+roles:
+  - Ph.D. student, POSTECH CV Lab
+  - Research Scientist Intern, Meta Zurich
+
+links:
+  - { name: Email, url: "mailto:gongda0e@postech.ac.kr" }
+  - { name: Google Scholar, url: "https://scholar.google.com/citations?user=LU_q94AAAAAJ" }
+  - { name: GitHub, url: "https://github.com/gongda0e" }
+  - { name: LinkedIn, url: "https://www.linkedin.com/in/dayoung-gong-11120717a" }

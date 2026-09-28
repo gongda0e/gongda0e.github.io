@@ -1,0 +1,26 @@
+{%- assign p = include.p -%}
+{%- assign me = site.data.profile.name -%}
+{%- capture me_b %}<strong>{{ me }}</strong>{% endcapture -%}
+{%- assign main_link = p.links | first -%}
+{%- for l in p.links %}{% if l.name == 'Website' %}{% assign main_link = l %}{% endif %}{% endfor -%}
+<article class="pub" data-first="{{ p.first_author | default: false }}">
+  <div>
+    {%- if p.image_dark %}
+    <div class="thumb only-light"><img src="{{ p.image | relative_url }}" alt="" loading="lazy"></div>
+    <div class="thumb dark-fig only-dark"><img src="{{ p.image_dark | relative_url }}" alt="" loading="lazy"></div>
+    {%- elsif p.image %}
+    <div class="thumb"><img src="{{ p.image | relative_url }}" alt="" loading="lazy"></div>
+    {%- endif %}
+  </div>
+  <div>
+    <h3>{% if main_link %}<a href="{{ main_link.url | relative_url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
+    <p class="au">{{ p.authors | replace: me, me_b }}</p>
+    <p class="ve">{{ p.venue_full }} ({{ p.venue }}), {{ p.year }}{% if p.note %}. {{ p.note }}{% endif %}</p>
+    {%- for a in p.awards %}<p class="aw">{{ a }}</p>{% endfor %}
+    <div class="pl">
+      {%- if p.abstract %}<button type="button" aria-expanded="false" data-abs>Abstract</button>{% endif -%}
+      {%- for l in p.links %}<a href="{{ l.url | relative_url }}">{{ l.name }}</a>{% endfor -%}
+    </div>
+    {%- if p.abstract %}<p class="abs" hidden>{{ p.abstract }}</p>{% endif %}
+  </div>
+</article>
