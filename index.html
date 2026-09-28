@@ -30,6 +30,14 @@ layout: default
   {%- endif %}
 </section>
 
+<section id="exp">
+  <h2>Experience &amp; education</h2>
+  <p class="sub">Experience</p>
+  {% include rows.html items=site.data.experience %}
+  <p class="sub">Education</p>
+  {% include rows.html items=site.data.education %}
+</section>
+
 <section id="pubs">
   <h2>Selected publications</h2>
   <div class="filter" role="group" aria-label="Filter publications">
@@ -41,14 +49,6 @@ layout: default
     {%- for p in selected %}{% include pub.html p=p %}{% endfor %}
   </div>
   <p class="eq">* Equal contribution</p>
-</section>
-
-<section id="exp">
-  <h2>Experience &amp; education</h2>
-  <p class="sub">Experience</p>
-  {% include rows.html items=site.data.experience %}
-  <p class="sub">Education</p>
-  {% include rows.html items=site.data.education %}
 </section>
 
 <section id="svc">

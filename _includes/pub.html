@@ -15,7 +15,8 @@
   <div>
     <h3>{% if main_link %}<a href="{{ main_link.url | relative_url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
     <p class="au">{{ p.authors | replace: me, me_b }}</p>
-    <p class="ve">{{ p.venue_full }} ({{ p.venue }}), {{ p.year }}{% if p.note %}. {{ p.note }}{% endif %}</p>
+    <p class="ve">{{ p.venue }} {{ p.year }}</p>
+    {%- if p.note %}<p class="ve">{{ p.note }}</p>{% endif %}
     {%- for a in p.awards %}<p class="aw">{{ a }}</p>{% endfor %}
     <div class="pl">
       {%- if p.abstract %}<button type="button" aria-expanded="false" data-abs>Abstract</button>{% endif -%}
