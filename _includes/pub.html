@@ -6,7 +6,7 @@
 <article class="pub" data-first="{{ p.first_author | default: false }}">
   <div>
     {%- if p.video %}
-    <div class="thumb"><video src="{{ p.video | relative_url }}"{% if p.image %} poster="{{ p.image | relative_url }}"{% endif %} autoplay muted loop playsinline preload="auto" aria-hidden="true"></video></div>
+    <div class="thumb vid"><video src="{{ p.video | relative_url }}"{% if p.image %} poster="{{ p.image | relative_url }}"{% endif %} autoplay muted loop playsinline preload="auto" aria-hidden="true"></video></div>
     {%- elsif p.image_dark %}
     <div class="thumb only-light"><img src="{{ p.image | relative_url }}" alt="" loading="lazy"></div>
     <div class="thumb dark-fig only-dark"><img src="{{ p.image_dark | relative_url }}" alt="" loading="lazy"></div>
