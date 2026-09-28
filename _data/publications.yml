@@ -8,20 +8,14 @@
 #   links        -> any names you like, shown in this order
 #   abstract     -> plain text
 #
-# Template for the NeurIPS 2026 paper; fill in and remove the leading "# ".
-# - title: "Long-Term Composition of Human-Object Interaction"
-#   authors: "..., Dayoung Gong, ..."
-#   venue: NeurIPS
-#   venue_full: Conference on Neural Information Processing Systems
-#   year: 2026
-#   image: /assets/img/hoi.png
-#   first_author: true
-#   selected: true
-#   links:
-#     - { name: arXiv, url: "https://arxiv.org/abs/..." }
-#     - { name: Code, url: "https://github.com/..." }
-#   abstract: >-
-#     ...
+- title: "Long-Term Composition of Human-Object Interactions"
+  authors: "Dayoung Gong, Minsu Cho, Gül Varol"
+  venue: NeurIPS
+  venue_full: Advances in Neural Information Processing Systems
+  year: 2026
+  image: /assets/img/LTHOI_teaser.png
+  first_author: true
+  selected: true
 
 - title: "Generic Event Boundary Detection via Denoising Diffusion"
   authors: "Jaejun Hwang*, Dayoung Gong*, Manjin Kim, Minsu Cho"
