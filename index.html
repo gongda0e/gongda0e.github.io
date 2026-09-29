@@ -3,7 +3,6 @@ layout: default
 ---
 {%- assign news = site.data.news | sort: 'date' | reverse -%}
 {%- assign n = site.news_on_home | default: 6 -%}
-{%- assign selected = site.data.publications | where: 'selected', true -%}
 
 <section class="about" id="about">
   <h2>About</h2>
@@ -38,10 +37,9 @@ layout: default
 </section>
 
 <section id="pubs">
-  <h2>Selected publications</h2>
-  <p class="full-list"><a href="{{ '/publications/' | relative_url }}">Full list</a></p>
+  <h2>Publications</h2>
   <div class="publist">
-    {%- for p in selected %}{% include pub.html p=p %}{% endfor %}
+    {%- for p in site.data.publications %}{% include pub.html p=p %}{% endfor %}
   </div>
   <p class="eq">* Equal contribution</p>
 </section>

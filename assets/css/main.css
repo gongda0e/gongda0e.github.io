@@ -90,15 +90,11 @@ footer{font:400 14px/1.5 var(--sans);color:var(--muted);padding-top:20px;border-
 
 /* additions for the Jekyll version */
 .photo{display:block}
-.side-nav a[aria-current="page"]{color:var(--ink)}
-.full-list{margin:-4px 0 20px;font:500 14px/1 var(--sans)}
 .rows .what .line{display:block;font-size:16px;color:var(--ink)}
 .rows .what .line strong{font-weight:600}
 details.more{margin-top:6px}
 details.more summary{cursor:pointer;font:500 14px/1.9 var(--sans);color:var(--acc);list-style-position:inside}
 details.more .news{margin-top:8px}
-.year{font:600 22px/1.2 var(--serif);margin:28px 0 8px}
-.year-group:first-of-type .year{margin-top:4px}
 .publist .pub:first-child{padding-top:0}
 .publist .pub:last-child{border-bottom:0}
 

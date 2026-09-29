@@ -15,8 +15,6 @@ Source for [gongda0e.github.io](https://gongda0e.github.io). Plain Jekyll, built
 
 - 뉴스 텍스트, 경력의 `org`/`detail`, 서비스 항목은 Markdown 링크 `[텍스트](URL)`를 쓸 수 있어요.
 - 논문의 `authors`에서 내 이름은 자동으로 굵게 표시돼요. 공동 1저자는 이름 뒤에 `*`.
-- `selected: true`인 논문만 홈에 나오고, `/publications/`에는 전부 연도별로 나와요.
-- `first_author: true`인 논문이 "First author" 필터에 나와요.
 - `image_dark`를 넣으면 다크 모드에서 그 그림으로 바뀌어요.
 - 뉴스를 홈에 몇 개 보여줄지는 `_config.yml`의 `news_on_home`.
 

@@ -1,18 +1,9 @@
 ---
-layout: default
-title: Publications
 permalink: /publications/
 ---
-{%- assign by_year = site.data.publications | group_by: 'year' | sort: 'name' | reverse -%}
-<section id="pubs">
-  <h2>Publications</h2>
-  {%- for g in by_year %}
-  <div class="year-group">
-    <p class="year">{{ g.name }}</p>
-    <div class="publist">
-      {%- for p in g.items %}{% include pub.html p=p %}{% endfor %}
-    </div>
-  </div>
-  {%- endfor %}
-  <p class="eq">* Equal contribution</p>
-</section>
+<!doctype html>
+<meta charset="utf-8">
+<title>Publications</title>
+<meta http-equiv="refresh" content="0; url={{ '/#pubs' | relative_url }}">
+<link rel="canonical" href="{{ '/#pubs' | absolute_url }}">
+<p>Moved to <a href="{{ '/#pubs' | relative_url }}">the home page</a>.</p>
