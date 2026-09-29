@@ -38,7 +38,7 @@
   venue: CVPR
   venue_full: IEEE/CVF Conference on Computer Vision and Pattern Recognition
   year: 2025
-  image: /assets/img/LLMVS2.png
+  image: /assets/img/LLMVS.png
   selected: true
   links:
     - { name: arXiv, url: "http://arxiv.org/abs/2504.11199" }
