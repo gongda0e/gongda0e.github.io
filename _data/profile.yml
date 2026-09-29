@@ -1,12 +1,11 @@
 # Sidebar and page header.
 name: Dayoung Gong
-name_native: 공다영
 email: gongda0e@postech.ac.kr
 photo: /assets/img/dygong.png
 
 # Short lines under your name. Update these when your position changes.
 roles:
-  - Ph.D. student, POSTECH CV Lab
+  - Ph.D. Candidate, POSTECH CV Lab
   - Research Scientist Intern, Meta Zurich
 
 links:
