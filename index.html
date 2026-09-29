@@ -4,7 +4,6 @@ layout: default
 {%- assign news = site.data.news | sort: 'date' | reverse -%}
 {%- assign n = site.news_on_home | default: 6 -%}
 {%- assign selected = site.data.publications | where: 'selected', true -%}
-{%- assign first_count = site.data.publications | where: 'first_author', true | size -%}
 
 <section class="about" id="about">
   <h2>About</h2>
@@ -40,11 +39,7 @@ layout: default
 
 <section id="pubs">
   <h2>Selected publications</h2>
-  <div class="filter" role="group" aria-label="Filter publications">
-    <button type="button" aria-pressed="true" data-f="all">All</button>
-    <button type="button" aria-pressed="false" data-f="first">First author</button>
-    <a class="note" href="{{ '/publications/' | relative_url }}">Full list</a>
-  </div>
+  <p class="full-list"><a href="{{ '/publications/' | relative_url }}">Full list</a></p>
   <div class="publist">
     {%- for p in selected %}{% include pub.html p=p %}{% endfor %}
   </div>

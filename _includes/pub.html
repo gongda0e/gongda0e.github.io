@@ -3,7 +3,7 @@
 {%- capture me_b %}<strong>{{ me }}</strong>{% endcapture -%}
 {%- assign main_link = p.links | first -%}
 {%- for l in p.links %}{% if l.name == 'Website' %}{% assign main_link = l %}{% endif %}{% endfor -%}
-<article class="pub" data-first="{{ p.first_author | default: false }}">
+<article class="pub">
   <div>
     {%- if p.video %}
     <div class="thumb vid"><video src="{{ p.video | relative_url }}"{% if p.image %} poster="{{ p.image | relative_url }}"{% endif %} autoplay muted loop playsinline preload="auto" aria-hidden="true"></video></div>
